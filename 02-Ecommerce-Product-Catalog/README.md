@@ -95,13 +95,13 @@ HTML Response
 ### 🗂️ Catalog Page
 
 <p align="center">
-  <img src="[02-Ecommerce-Product-Catalog/screenshots/catalog.png](https://github.com/sergoo-lgtm/My-Asp.NetMVC-Labs/blob/main/02-Ecommerce-Product-Catalog/screenshots/catalog.png?raw=true)" width="800"/>
+  <img src="https://raw.githubusercontent.com/sergoo-lgtm/My-Asp.NetMVC-Labs/refs/heads/main/02-Ecommerce-Product-Catalog/screenshots/catalog.png" width="800"/>
 </p>
 
 ### 📱 Product Details Page
 
 <p align="center">
-  <img src="[02-Ecommerce-Product-Catalog/screenshots/details.png](https://github.com/sergoo-lgtm/My-Asp.NetMVC-Labs/blob/main/02-Ecommerce-Product-Catalog/screenshots/details.png?raw=true)" width="800"/>
+  <img src="https://raw.githubusercontent.com/sergoo-lgtm/My-Asp.NetMVC-Labs/refs/heads/main/02-Ecommerce-Product-Catalog/screenshots/details.png" width="800"/>
 </p>
 
 ---
