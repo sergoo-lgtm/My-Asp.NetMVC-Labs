@@ -1,0 +1,11 @@
+@model Product
+
+<h1 style="color: #664d03;">@Model.ProductName</h1>
+
+<h2>@Model.ProductDescription</h2>
+<h2>@Model.ProductPrice $</h2>
+
+<img src="/images/@Model.ImageURL" style="width:300px" />
+<a asp-controller="Product" asp-action="ShowAllProducts" class="btn btn-primary">
+    Back to All Products
+</a>
