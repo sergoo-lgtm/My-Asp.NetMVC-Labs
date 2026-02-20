@@ -180,7 +180,7 @@ dotnet run
 ### 🏢 Departments Page
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/your-username/EmployeeManagementSystem/main/screenshots/departments.png" width="900"/>
+  <img src="https://raw.githubusercontent.com/sergoo-lgtm/My-Asp.NetMVC-Labs/refs/heads/main/03-EmployeeManagementSystem/ScreenShots/Screenshot%202026-02-20%20at%2011.27.22%E2%80%AFAM.png" width="900"/>
 </p>
 
 ---
@@ -188,7 +188,7 @@ dotnet run
 ### 👨‍💼 Employees Page
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/your-username/EmployeeManagementSystem/main/screenshots/employees.png" width="900"/>
+  <img src="https://raw.githubusercontent.com/sergoo-lgtm/My-Asp.NetMVC-Labs/refs/heads/main/03-EmployeeManagementSystem/ScreenShots/Screenshot%202026-02-20%20at%2011.26.32%E2%80%AFAM.png" width="900"/>
 </p>
 
 ---
