@@ -1,0 +1,39 @@
+@model EmployeeManagementSystem.Models.Empoloyee?
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<form method="post" action="/Employee/SaveChanges">
+    <input type="hidden" name="Id" value="@Model?.Id" />
+    <div>
+        <label>Name</label>
+        <input name="Name" id="Name" value="@Model?.Name" type="text" class="form form-control"/>
+    </div>
+
+    <div>
+        <label>Address</label>
+        <input name="Address" id="Address" value="@Model?.Address" type="text" class="form form-control"/>
+    </div>
+    <div>
+        <label>JobTitle</label>
+        <input name="JobTitle" id="JobTitle" value="@Model?.JobTitle" type="text" class="form form-control"/>
+    </div>
+
+    <div>
+        <label>Salary</label>
+        <input name="Salary" id="Salary" value="@Model?.Salary" type="number" class="form form-control"/>
+    </div>
+    
+    <div>
+        <input name="ImageURL" id="ImageURL" value="@Model?.ImageURL" type="hidden" />
+    </div>
+    <div>
+
+    <input type="hidden" name="DepartmentId" value="@Model?.DepartmentId" />
+    </div>
+
+
+    <input type="submit" value="Save Changes" class="btn btn-primary"/>
+</form>

@@ -1,0 +1,27 @@
+@model System.Collections.Generic.List<EmployeeManagementSystem.Models.Empoloyee>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>All Employess</h2>
+<table class="table table-hover table-bordered">
+    <tr>
+        <th>No.</th> <th>NAme</th>  <th>JobTitle</th> <th>Salary</th>  <th>Address</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.JobTitle</td>
+            <td>@item.Salary</td>
+            <td>@item.Address</td>
+            <td><img src="@item.ImageURL" width="30px" height="30px"/></td>
+            <td><a href="/Employee/EditEmployees?id=@item.Id">Edit</a></td>
+
+
+        </tr>
+    }
+</table>

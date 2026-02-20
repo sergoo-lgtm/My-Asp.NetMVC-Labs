@@ -1,0 +1,23 @@
+@model Department
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<form method="post" action="/Department/SaveAdd">
+    <div>
+        <label>Name</label>
+        <input name="Name" id="Name" value="@Model?.Name" type="text" class="form form-control"/>
+    </div>
+    
+    <div>
+        <label>ManagerName</label>
+        <input name="ManagerName" id="ManagerName" value="@Model?.ManagerName" type="text" class="form form-control"/>
+    </div>
+    
+    <input type="submit" value="Create" class="btn btn-primary"/>
+    
+    
+</form>
+
+<a href="/Department/Index">Back To List</a>
