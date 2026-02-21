@@ -1,0 +1,36 @@
+@model List<Instructor>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<table class="table table-bordered table-hover">
+
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    @foreach (var instructor in Model)
+    {
+        <tr>
+            <td>@instructor.Id</td>
+            <td>@instructor.Name</td>
+            
+             <td> 
+                 <a asp-controller="Instructors"
+                    asp-action="DetailsInstructor"
+                    asp-route-id="@instructor.Id"
+                    class="btn btn-primary">
+                     Show Details
+                 </a>
+             </td> 
+        </tr>
+    }
+    </tbody>
+
+</table>

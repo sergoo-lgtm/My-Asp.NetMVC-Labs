@@ -1,0 +1,17 @@
+@model Instructor
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<h1 style="color: #664d03;">@Model.Name</h1>
+
+<h2>ID : @Model.Id</h2>
+<h2>Address : @Model.Address</h2>
+<h2>Salary : @Model.Salary</h2>
+
+
+<img src="/Images/@Model.Img" style="width:300px" />
+<a asp-controller="Instructors" asp-action="Index" class="btn btn-primary">
+    Back to All instructors
+</a>
