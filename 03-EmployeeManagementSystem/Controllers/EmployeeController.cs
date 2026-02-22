@@ -34,4 +34,26 @@ public class EmployeeController : Controller
 
         return View("EditEmployees", employee);
     }
+    [HttpGet]
+    public IActionResult AddEmployee()
+    {
+        ViewData["DepList"] = context.Departments.ToList();
+
+        return View("AddEmployee");
+    }
+    
+    [HttpPost]
+    public IActionResult SaveAddEmployee(Empoloyee employee)
+    {
+        if (employee.Name != null)
+        {
+            context.Employees.Add(employee);
+            context.SaveChanges();
+            return RedirectToAction("ShowAllEmployees");
+        }
+        ViewData["DepList"] = context.Departments.ToList();
+
+        return View("AddEmployee", employee);
+    }
+    
 }

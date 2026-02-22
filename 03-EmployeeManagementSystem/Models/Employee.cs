@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EmployeeManagementSystem.Models;
@@ -13,6 +14,7 @@ namespace EmployeeManagementSystem.Models;
         public string? Address { get; set; }
     
         [ForeignKey("Department")]
+        [Display(Name = "Department")]
         public int DepartmentId { get; set; }
         public Department Department { get; set; }
 
