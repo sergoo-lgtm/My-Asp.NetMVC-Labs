@@ -14,7 +14,7 @@ public class Dcontext:DbContext
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                "Server=localhost,1433;Database=EduManagementSystemDB;User Id=sa;Password=Yosuef@2026;TrustServerCertificate=True;"
+                "Server=192.168.1.2,1433;Database=EduManagementSystemDB;User Id=sa;Password=Yosuef@2026;Encrypt=False;TrustServerCertificate=True;"
             );
         }
 
